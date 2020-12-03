@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresca Bootstrap 4 Theme Full Screen</title>
+    <meta name="generator" content="Themestr.app">
+    <link rel="icon" href="http://themes.guide/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="http://themes.guide/favicon.ico" type="image/x-icon" />
+    <meta property="og:image" name="twitter:image" content="http://bootstrap.themes.guide/assets/ss_fresca.png">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/3.0.0/css/ionicons.css" rel="stylesheet">
+    <link href="./theme.css" rel="stylesheet">
+    <link href="./template.css" rel="stylesheet">
+  </head>
+  
+  <body  data-target="#navbar1" data-offset="60">
+    <header class="bg-primary">
+    </header>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary" id="navbar1">
+        <div class="container">
+            <a class="navbar-brand mr-1 mb-1 mt-0" href="./index.html">PsyLine</a>
+            <div class="navbar-collapse collapse justify-content-center" id="collapsingNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" style="text-decoration: underline;" href="diagnostic.html">
+                          Diagnostic
+                        </a>
+                       
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        Rendez-Vous
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Nos Produits
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDd">
+                            <a class="dropdown-item px-2" href="#more">Parapharmacie</a>
+                            <a class="dropdown-item px-2" href="#more">Livres</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                        Forum
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    
+                        
+                        
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#buttons">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#navs">Créer un Compte</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          More
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDd">
+                            <a class="dropdown-item px-2" href="#more">Facebook</a>
+                            <a class="dropdown-item px-2" href="#more">Contactez-nous</a>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    <main>
+        
+        <section style="margin: 100px;align-content: center;" id="cards" class="container pb-5">
+            <div class="d-flex my-3">
+                <div class="jumbotron w-100 py-5 mx-auto">
+                    <h1>Question n°1</h1>
+                    <h4>Vous êtes-vous senti particulièrement déprimé ou abattu pendant plus de deux semaines d'affilée ?</h4>
+                    <p class="lead">
+                        Choisissez une seule réponse qui convient le mieux à votre situation.
+                    </p>
+                    <form  action="diagnostic.php" method="POST">                      
+                        <input type="radio" id="q11" name="q1" value="très souvent" onclick="myFunction('q11','q12','q13','q14','text1')">
+                        <label class="lead" for="q11">Très souvent   </label>
+                        <input type="radio" id="q12" name="q1" value="parfois" onclick="myFunction('q11','q12','q13','q14','text1')">
+                        <label class="lead" for="q12">Parfois   </label>
+                        <input type="radio" id="q13" name="q1" value="rarement" onclick="myFunction('q11','q12','q13','q14','text1')">
+                        <label class="lead" for="q13">Rarement   </label>
+                        <input type="radio" id="q14" name="q1" value="jamais" onclick="myFunction('q11','q12','q13','q14','text1')">
+                        <label class="lead" for="q14">Jamais   </label> <br>
+                        <p id="text1" style="display:none">Votre réponse est </p>
+                        <button type="button" onclick="Verif('text1','1.','2')" class="btn btn-secondary">Next</button>
+                    
+                </div>
+            </div>
+            <div id= "question2" class="d-flex my-3">
+                <div class="jumbotron w-100 py-5 mx-auto">
+                    <h1>Question n°2</h1>
+                    <h4>Quand avez-vous passé votre dernier examen de santé ?</h4>
+                    <p class="lead">
+                        Choisissez une seule réponse qui convient le mieux à votre situation.
+                    </p>
+                                          
+                        <input type="radio" id="q21" name="q2" value="Il y a moins de 6 mois" onclick="myFunction('q21','q22','q23','q24','text2')">
+                        <label class="lead" for="q21">Il y a moins de 6 mois   </label>
+                        <input type="radio" id="q22" name="q2" value="il y a 6 mois " onclick="myFunction('q21','q22','q23','q24','text2')">
+                        <label class="lead" for="q22">il y a 6 mois   </label>
+                        <input type="radio" id="q23" name="q2" value="Il y a un an" onclick="myFunction('q21','q22','q23','q24','text2')">
+                        <label class="lead" for="q23">Il y a un an   </label>
+                        <input type="radio" id="q24" name="q2" value="Il y a plus d'un an" onclick="myFunction('q21','q22','q23','q24','text2')">
+                        <label class="lead" for="q24">Il y a plus d'un an   </label> <br>
+                        <p id="text2" style="display:none">Votre réponse est </p>
+                        <button type="button" onclick="Verif('text2','2.','3')" class="btn btn-secondary">Next</button>
+                   
+                </div>
+            </div>
+            <div id= "question3" class="d-flex my-3">
+                <div class="jumbotron w-100 py-5 mx-auto">
+                    <h1>Question n°3</h1>
+                    <h4>Dans l'ensemble, comment évalueriez-vous votre santé mentale ?</h4>
+                    <p class="lead">
+                        Choisissez une seule réponse qui convient le mieux à votre situation.
+                    </p>
+                                        
+                        <input type="radio" id="q31" name="q3" value="Excellente" onclick="myFunction('q31','q32','q33','q34','text3')">
+                        <label class="lead" for="q31">Excellente </label>
+                        <input type="radio" id="q32" name="q3" value="Assez bonne" onclick="myFunction('q31','q32','q33','q34','text3')">
+                        <label class="lead" for="q32">Assez bonne   </label>
+                        <input type="radio" id="q33" name="q3" value="Moyenne" onclick="myFunction('q31','q32','q33','q34','text3')">
+                        <label class="lead" for="q33">Moyenne </label>
+                        <input type="radio" id="q34" name="q3" value="Mauvaise" onclick="myFunction('q31','q32','q33','q34','text3')">
+                        <label class="lead" for="q34">Mauvaise   </label><br>
+                        <p id="text3" style="display:none">Votre réponse est </p>
+                        <button type="submit" onclick="Verif('text3','3.','4')" class="btn btn-secondary">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+        <footer id="footer" class="bg-dark text-light py-5">
+          
+        </footer> 
+    <script src="jquery.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+    <script>
+        function myFunction(id1,id2,id3,id4,id5) {
+        var checkBox1 = document.getElementById(id1);
+        var checkBox2 = document.getElementById(id2);
+        var checkBox3 = document.getElementById(id3);
+        var checkBox4 = document.getElementById(id4);
+        var text = document.getElementById(id5).innerHTML;
+        var t = document.getElementById(id5);
+        var b = '\"';
+            if (checkBox1.checked == true){
+            text="Votre réponse est : \"";
+            let a = text.concat(checkBox1.value,b);
+            t.innerHTML=a;
+            t.style.display = "block";
+        } else if (checkBox2.checked == true){
+            text="Votre réponse est : \"";
+            let a = text.concat(checkBox2.value,b);
+            t.innerHTML=a;
+            t.style.display = "block";
+        } else if (checkBox3.checked == true){
+            text="Votre réponse est : \"";
+            let a = text.concat(checkBox3.value,b);
+            t.innerHTML=a;
+            t.style.display = "block";
+        } else if (checkBox4.checked == true){
+            text="Votre réponse est : \"";
+            let a = text.concat(checkBox4.value,b);
+            t.innerHTML=a;
+            t.style.display = "block";
+        }else {
+            t.style.display = "none";
+        }
+        }
+        function Verif(id,num,num2){
+            var t = document.getElementById(id);
+            if (t.style.display == "none"){
+                let a = "SVP répondez à la question numero ";
+                let b = a.concat(num);
+                alert(b)
+            } else jumpto(num2);   
+        
+        }
+        function jumpto(num){
+            let q = "#question";
+            let d = q.concat(num)
+        window.location.href = d;
+        }
+    </script>
+</body>
+</html>
