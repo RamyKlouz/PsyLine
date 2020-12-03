@@ -13,7 +13,7 @@
 		<title> Afficher Liste Utilisateurs </title>
     </head>
     <body>
-		<button><a href="diagnostic.php">Ajouter un Utilisateur</a></button>
+		<button><a href="diagnostic.html">Ajouter un Utilisateur</a></button>
 		<hr>
 		<table border=1 align = 'center'>
 			<tr>
